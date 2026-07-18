@@ -1,0 +1,10 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "/usr/local/bin/3x-ui",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
