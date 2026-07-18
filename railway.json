@@ -4,7 +4,7 @@
     "builder": "DOCKERFILE"
   },
   "deploy": {
-    "startCommand": "/usr/local/bin/3x-ui",
+    "startCommand": "/entrypoint.sh",
     "restartPolicyType": "ON_FAILURE"
   }
 }
