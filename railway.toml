@@ -2,4 +2,6 @@
 builder = "DOCKERFILE"
 
 [deploy]
-restartPolicyType = "ON_FAILURE"
+# این خط باعث می‌شود Railway بداند پورت پنل شما ۸۰۸۰ است
+[deploy.service]
+healthcheck_path = "/login"
