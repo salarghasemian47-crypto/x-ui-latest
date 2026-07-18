@@ -1,10 +1,8 @@
+# استفاده از ایمیج رسمی و بهینه شده 3x-ui
 FROM ghcr.io/mhsanaei/3x-ui:latest
 
-# تنظیمات اولیه برای کار با دیتابیس خارجی
-ENV DB_TYPE=postgres
-ENV XUI_PORT=8080
-
+# تعیین پورت اصلی پنل (مطابق با تنظیمات Railway)
 EXPOSE 8080
 
-# دستور اجرا
+# دستور اجرای پنل
 CMD ["/usr/local/bin/x-ui"]
